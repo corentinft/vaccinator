@@ -1,0 +1,15 @@
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/bin/Debug/net5.0/Vaccinator.ORM.deps.json
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/bin/Debug/net5.0/Vaccinator.ORM.runtimeconfig.json
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/bin/Debug/net5.0/Vaccinator.ORM.runtimeconfig.dev.json
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/bin/Debug/net5.0/Vaccinator.ORM.dll
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/bin/Debug/net5.0/ref/Vaccinator.ORM.dll
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/bin/Debug/net5.0/Vaccinator.ORM.pdb
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/obj/Debug/net5.0/Vaccinator.ORM.csprojAssemblyReference.cache
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/obj/Debug/net5.0/Vaccinator.ORM.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/obj/Debug/net5.0/Vaccinator.ORM.AssemblyInfoInputs.cache
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/obj/Debug/net5.0/Vaccinator.ORM.AssemblyInfo.cs
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/obj/Debug/net5.0/Vaccinator.ORM.csproj.CoreCompileInputs.cache
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/obj/Debug/net5.0/Vaccinator.ORM.dll
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/obj/Debug/net5.0/ref/Vaccinator.ORM.dll
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/obj/Debug/net5.0/Vaccinator.ORM.pdb
+/Users/ysaudrais/Développement/C#/vaccinator/Ehpad.ORM/obj/Debug/net5.0/Vaccinator.ORM.genruntimeconfig.cache

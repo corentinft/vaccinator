@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Ehpad.ORM.Vaccin>
+
+@{
+    ViewData["Title"] = "List of vaccines";
+}
+
+<div class="card">
+    <div class="card-header text-center">
+        <h1>List of vaccines</h1>
+    </div>
+    <div class="card-body">
+
+        <button type="button" class="btn btn-outline-success"><a asp-action="Create">Creation</a></button>
+
+        <table class="table table-striped">
+            <thead class="thead-dark">
+
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Brand)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.VaccineType)
+                    </th>
+
+                    <th>Actions</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Brand)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.VaccineType.Label)
+                        </td>
+
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

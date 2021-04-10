@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Ehpad.ORM.Person>
+
+@{
+    ViewData["Title"] = "List of influenza patients";
+}
+
+<div class="card">
+    <div class="card-header text-center">
+        <h1>People not vaccinated against the influenza this year</h1>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Firstname)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.Lastname)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.Gender)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.BirthDate)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.PersonType)
+                    </th>
+
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Firstname)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Lastname)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Gender)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BirthDate)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PersonType.Label)
+                        </td>
+
+                        <td>
+                            <a asp-controller="Vacciner" asp-action="Personne" asp-route-id="@item.Id">Injections</a>
+                        </td>
+
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

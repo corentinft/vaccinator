@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Ehpad.ORM.Vacciner>
+
+@{
+    ViewData["Title"] = "List of injections";
+}
+
+<div class="card">
+    <div class="card-header text-center">
+        <h1>List of injections</h1>
+    </div>
+    <div class="card-body">
+
+        <button type="button" class="btn btn-outline-success"><a asp-action="Create">Add</a></button>
+
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.Date)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.RecallDate)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.BatchNumber)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.Person)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.Vaccine)
+                    </th>
+
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Date)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RecallDate)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BatchNumber)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Person.Firstname)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Vaccine.Brand)
+                        </td>
+
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
